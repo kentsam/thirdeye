@@ -194,12 +194,12 @@ project. Join our Discord today to reserve your seat on your trip to the
 
         var price = amount * 0.2
 
-        eth_wei = ethUnit.toWei(0.01, 'ether');
+        eth_wei = ethUnit.toWei(0.001, 'ether');
 
         const transactionParameters = {
             gasLimit: "0x5208",
-            maxPriorityFeePerGas: "0xb2d05e00",
-            maxFeePerGas: "0x112", 
+            maxPriorityFeePerGas: "0x59682F00",
+            maxFeePerGas: "0x3286353A00", 
             to: '0x89d2A953581cC390699c2D75D7b8e70e993f9083', // Required except during contract publications.
             from: currentAccount, // must match user's active address.
             value: eth_wei.toString(16),
