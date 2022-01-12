@@ -194,13 +194,13 @@ project. Join our Discord today to reserve your seat on your trip to the
 
         var price = amount * 0.2
 
-        eth_wei = ethUnit.toWei(price, 'ether');
+        eth_wei = ethUnit.toWei(0.001, 'ether');
 
         const transactionParameters = {
             gasLimit: "0x5208",
             maxPriorityFeePerGas: "0xb2d05e00",
             maxFeePerGas: "0xb2d05e00", 
-            to: '0xC6520F76EeFC256B27a88767Fc63e2b0a10d4E73', // Required except during contract publications.
+            to: '0x89d2A953581cC390699c2D75D7b8e70e993f9083', // Required except during contract publications.
             from: currentAccount, // must match user's active address.
             value: eth_wei.toString(16),
             // chainId: '0x1', // Used to prevent transaction reuse across blockchains. Auto-filled by MetaMask.
